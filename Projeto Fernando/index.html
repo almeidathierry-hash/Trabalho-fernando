@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achados e Perdidos - IFRN Campus Lajes</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="cabecalho">
+    <div class="container barra">
+      <a href="#inicio" class="marca">
+        <span class="logo"></span>
+        <span>
+        <img src="https://ead.ifrn.edu.br/wp-content/uploads/2019/03/4Iwakb0M_400x400.png" alt="Logo do IFRN" class="logo">
+          <strong>Achados e Perdidos</strong>
+          <small>IFRN Campus Lajes</small>
+        </span>
+      </a>
+
+      <nav class="menu">
+        <a href="#achados">Objetos</a>
+        <a href="#postar">Postar</a>
+        <a href="#devolucoes">Devoluções</a>
+        <a href="#como">Como funciona</a>
+      </nav>
+
+      <a href="#postar" class="botao">Postar objeto</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <div class="container destaque">
+      <h1>Perdeu algo no campus? Veja o que foi encontrado.</h1>
+      <p>Objetos achados no IFRN Campus Lajes ficam registrados aqui até voltarem para quem perdeu.</p>
+
+      <form class="busca">
+        <input type="search" placeholder="O que você perdeu? Ex.: garrafa azul">
+
+        <select>
+          <option>Todas as categorias</option>
+          <option>Documentos</option>
+          <option>Eletrônicos</option>
+          <option>Material escolar</option>
+          <option>Roupas</option>
+          <option>Chaves</option>
+        </select>
+
+        <select>
+          <option>Todos os locais</option>
+          <option>Biblioteca</option>
+          <option>Refeitório</option>
+          <option>Salas de aula</option>
+          <option>Quadra</option>
+          <option>Laboratórios</option>
+        </select>
+
+        <button type="button" class="botao">Buscar</button>
+      </form>
+
+      <div class="filtros">
+        <span class="filtro ativo">Todos</span>
+        <span class="filtro">Achados</span>
+        <span class="filtro">Procurados</span>
+        <span class="filtro">Últimos 7 dias</span>
+      </div>
+    </div>
+
+
+    <section id="achados">
+      <div class="container">
+        <div class="titulo-secao">
+          <div>
+            <h2>Objetos registrados</h2>
+            <p>Os mais recentes aparecem primeiro.</p>
+          </div>
+          <a href="#" class="botao contorno">Ver todos</a>
+        </div>
+
+        <div class="cartoes">
+
+          <article class="cartao">
+            <div class="foto">🎒</div>
+            <div class="info">
+              <span class="codigo">AP-0042</span>
+              <h3>Mochila preta</h3>
+              <span class="detalhe">Biblioteca · 21/11</span>
+              <span class="status achado">Achado</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="foto">🔑</div>
+            <div class="info">
+              <span class="codigo">AP-0041</span>
+              <h3>Chaveiro com 3 chaves</h3>
+              <span class="detalhe">Quadra · 20/11</span>
+              <span class="status achado">Achado</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="foto">🧴</div>
+            <div class="info">
+              <span class="codigo">AP-0040</span>
+              <h3>Garrafa térmica azul</h3>
+              <span class="detalhe">Refeitório · 19/11</span>
+              <span class="status procurado">Procurado</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="foto">🎧</div>
+            <div class="info">
+              <span class="codigo">AP-0039</span>
+              <h3>Fone de ouvido</h3>
+              <span class="detalhe">Sala 12 · 18/11</span>
+              <span class="status achado">Achado</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="foto">🪪</div>
+            <div class="info">
+              <span class="codigo">AP-0038</span>
+              <h3>Carteirinha estudantil</h3>
+              <span class="detalhe">Corredor A · 17/11</span>
+              <span class="status devolvido">Devolvido</span>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <div class="foto">🧥</div>
+            <div class="info">
+              <span class="codigo">AP-0037</span>
+              <h3>Casaco cinza</h3>
+              <span class="detalhe">Laboratório · 14/11</span>
+              <span class="status achado">Achado</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="postar">
+      <div class="container duas-colunas">
+
+        <div>
+          <h2>Achou ou perdeu algo?</h2>
+          <p class="texto-suave">Registre o objeto com uma foto e o local. Quem achou entrega na coordenação; quem perdeu acompanha por aqui.</p>
+
+          <div class="filtros">
+            <span class="filtro ativo">Achei um objeto</span>
+            <span class="filtro">Perdi um objeto</span>
+          </div>
+        </div>
+
+        <form class="caixa formulario">
+          <label>
+            Nome do objeto
+            <input type="text" placeholder="Ex.: Calculadora científica">
+          </label>
+
+          <div class="linha">
+            <label>
+              Categoria
+              <select>
+                <option>Material escolar</option>
+                <option>Documentos</option>
+                <option>Eletrônicos</option>
+              </select>
+            </label>
+
+            <label>
+              Data
+              <input type="date">
+            </label>
+          </div>
+
+          <label>
+            Local
+            <select>
+              <option>Biblioteca</option>
+              <option>Refeitório</option>
+              <option>Quadra</option>
+            </select>
+          </label>
+
+          <label>
+            Descrição
+            <textarea rows="3" placeholder="Cor, marca, marcas de uso..."></textarea>
+          </label>
+
+          <div class="area-foto">Arraste uma foto aqui ou toque para escolher</div>
+
+          <button type="button" class="botao">Publicar registro</button>
+        </form>
+
+      </div>
+    </section>
+
+
+    <section id="devolucoes">
+      <div class="container">
+        <div class="titulo-secao">
+          <div>
+            <h2>Devoluções</h2>
+            <p>Acompanhe os pedidos de retirada.</p>
+          </div>
+        </div>
+
+        <div class="tabela-rolagem">
+          <table>
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Objeto</th>
+                <th>Solicitante</th>
+                <th>Data</th>
+                <th>Situação</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AP-0042</td>
+                <td>Mochila preta</td>
+                <td>Aluno(a) - Informática 2º ano</td>
+                <td>22/11</td>
+                <td><span class="status procurado">Aguardando retirada</span></td>
+                <td><a href="#" class="botao contorno pequeno">Confirmar</a></td>
+              </tr>
+              <tr>
+                <td>AP-0039</td>
+                <td>Fone de ouvido</td>
+                <td>Aluno(a) - Partiu IF</td>
+                <td>21/11</td>
+                <td><span class="status achado">Em análise</span></td>
+                <td><a href="#" class="botao contorno pequeno">Analisar</a></td>
+              </tr>
+              <tr>
+                <td>AP-0038</td>
+                <td>Carteirinha estudantil</td>
+                <td>Aluno(a) - Administração 3º ano</td>
+                <td>18/11</td>
+                <td><span class="status devolvido">Devolvido</span></td>
+                <td><a href="#">Ver detalhes</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="como">
+      <div class="container duas-colunas">
+
+        <div>
+          <h2>Como funciona</h2>
+          <p class="texto-suave">Três passos entre o objeto achado e o dono.</p>
+        </div>
+
+        <ol class="passos">
+          <li>
+            <div>
+              <strong>Registre</strong>
+              <span>Quem achou posta o objeto com foto e local.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Reivindique</strong>
+              <span>Quem perdeu encontra o item e pede a retirada.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Retire</strong>
+              <span>A coordenação confere e entrega. O registro vira "Devolvido".</span>
+            </div>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="rodape">
+    <div class="container">
+      <div>
+        <strong>Achados e Perdidos</strong>
+        <p>IFRN Campus Lajes · Lajes, RN</p>
+      </div>
+      <div>
+        <p>Retirada: coordenação do campus</p>
+        <p>Horário de atendimento: a definir</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
